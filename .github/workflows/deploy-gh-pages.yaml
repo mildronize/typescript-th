@@ -9,6 +9,9 @@ on:
       - 'docs/**'
       - 'src/**'
       - 'static/**'
+      - 'docusaurus.config.js'
+      - 'sidebars.js'
+
 jobs:
   deploy:
     runs-on: ubuntu-20.04
