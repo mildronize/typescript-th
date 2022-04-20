@@ -76,6 +76,11 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
+            href: 'https://thadaw.com/about/',
+            label: 'Author',
+            position: 'right',
+          },
+          {
             href: 'https://github.com/mildronize/github-actions-thai',
             label: 'GitHub',
             position: 'right',
