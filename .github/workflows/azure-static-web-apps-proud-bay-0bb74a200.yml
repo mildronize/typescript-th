@@ -4,6 +4,14 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'blog/**'
+      - 'docs/**'
+      - 'src/**'
+      - 'static/**'
+      - 'docusaurus.config.js'
+      - 'sidebars.js'
+      
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
