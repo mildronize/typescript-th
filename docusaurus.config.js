@@ -72,7 +72,7 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Docs',
+            label: 'Book',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -86,11 +86,15 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Links',
             items: [
               {
-                label: 'Docs',
+                label: 'Book',
                 to: '/docs/about-the-book',
+              },
+              {
+                label: 'Author\'s Site',
+                to: 'https://thadaw.com/',
               },
             ],
           },
