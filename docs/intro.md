@@ -4,7 +4,15 @@ sidebar_position: 1
 
 # Introduction
 
-สวัสดีครับ นี่ไม่ใช่ GitHub Actions 101 ไม่ใช่สำหรับผู้เริ่มต้น แต่จะมีข้อมูล และ Trick ดีๆ เกี่ยวกับใช้งาน GitHub Actions มาแบ่งปันแน่นอน
+
+
+
+:::note
+
+<img src="/img/kitty/kitty-love.png" width="30"/> สวัสดีครับ นี่ไม่ใช่ GitHub Actions 101 ไม่ใช่สำหรับผู้เริ่มต้น แต่จะมีข้อมูล และ Trick ดีๆ เกี่ยวกับใช้งาน GitHub Actions มาแบ่งปันแน่นอน
+
+:::
+
 
 ## GitHub Action Virtual Environment
 
@@ -22,3 +30,7 @@ Ref: https://github.com/actions/virtual-environments
 | Windows Server 2022 | `windows-latest` or `windows-2022` | [windows-2022] | [![](https://actionvirtualenvironmentsstatus.azurewebsites.net/api/status?imageName=windows-2022&badge=1)](https://actionvirtualenvironmentsstatus.azurewebsites.net/api/status?imageName=windows-2022&redirect=1) |
 | Windows Server 2019 | `windows-2019` | [windows-2019] | [![](https://actionvirtualenvironmentsstatus.azurewebsites.net/api/status?imageName=windows-2019&badge=1)](https://actionvirtualenvironmentsstatus.azurewebsites.net/api/status?imageName=windows-2019&redirect=1)
 | Windows Server 2016 | `windows-2016` | [windows-2016] | [![](https://actionvirtualenvironmentsstatus.azurewebsites.net/api/status?imageName=windows-2016&badge=1)](https://actionvirtualenvironmentsstatus.azurewebsites.net/api/status?imageName=windows-2016&redirect=1)
+
+## Third Party Notice
+
+Icon: https://www.flaticon.com/packs/kitty-avatars-3

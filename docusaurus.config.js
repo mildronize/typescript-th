@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Github Actions Cookbook',
+  title: 'Github Actions TH',
   tagline: 'คู่มือทำ CI/CD ด้วย GitHub Actions สำหรับคนไทย',
   url: 'https://github-actions-th.thadaw.com',
   baseUrl: '/',
@@ -16,6 +16,8 @@ const config = {
   organizationName: 'mildronize', // Usually your GitHub org/user name.
   projectName: 'github-actions-thai', // Usually your repo name.
 
+
+  // https://www.flaticon.com/packs/kitty-avatars-3
   i18n: {
     defaultLocale: 'th',
     locales: ['th', 'en'],
@@ -62,8 +64,8 @@ const config = {
       navbar: {
         title: 'GitHub Actions TH',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'GitHub Actions Logo',
+          src: 'img/logo.png',
         },
         items: [
           {
