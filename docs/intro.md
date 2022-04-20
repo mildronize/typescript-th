@@ -2,9 +2,7 @@
 sidebar_position: 1
 ---
 
-# Introduction
-
-
+# บทนำ
 
 
 :::note
@@ -31,6 +29,3 @@ Ref: https://github.com/actions/virtual-environments
 | Windows Server 2019 | `windows-2019` | [windows-2019] | [![](https://actionvirtualenvironmentsstatus.azurewebsites.net/api/status?imageName=windows-2019&badge=1)](https://actionvirtualenvironmentsstatus.azurewebsites.net/api/status?imageName=windows-2019&redirect=1)
 | Windows Server 2016 | `windows-2016` | [windows-2016] | [![](https://actionvirtualenvironmentsstatus.azurewebsites.net/api/status?imageName=windows-2016&badge=1)](https://actionvirtualenvironmentsstatus.azurewebsites.net/api/status?imageName=windows-2016&redirect=1)
 
-## Third Party Notice
-
-Icon: https://www.flaticon.com/packs/kitty-avatars-3
