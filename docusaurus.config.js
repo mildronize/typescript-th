@@ -21,6 +21,16 @@ const config = {
     locales: ['th', 'en'],
   },
 
+  plugins: [
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-DYS0KBXEDD',
+        anonymizeIP: true,
+      },
+    ],
+  ],
+
   presets: [
     [
       'classic',
@@ -41,6 +51,8 @@ const config = {
           customCss: require.resolve('./src/css/custom.css'),
         },
       }),
+        
+      
     ],
   ],
 
