@@ -74,3 +74,21 @@ steps:
     git commit -m "$CommitMessage"
   done
   ```
+
+## ใน Matrix ไม่สามารถใส่ GitHub Expression ได้
+
+เช่น แบบนี้จะทำไม่ได้
+
+```yml
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - env_name: customer_a
+            bacpac_file: database_customer_a.bacpac
+
+          - env_name: customer_b
+            bacpac_file: database_customer_b.Storm_Demo.bacpac
+            enabled: ${{ needs.get-pull-request-metadata.outputs.enable_customer_b}}
+```
+
