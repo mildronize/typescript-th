@@ -81,7 +81,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/mildronize/tyescript-th',
+            href: 'https://github.com/mildronize/typescript-th',
             label: 'GitHub',
             position: 'right',
           },
