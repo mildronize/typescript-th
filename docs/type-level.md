@@ -10,16 +10,17 @@ sidebar_position: 3
 
 ## การเขียนโปรแกรมแบบ Type และ Value
 
-ก่อนอื่น เวลาที่เราเขียนภาษา JavaScript เรามักจะสนใจเพียงแค่การทำงานให้ถูกต้อง แต่พอเป็นเรื่อง Type ก็อาจจะไม่ได้สนใจมากนัก แต่พอเรามาเขียน TypeScript จะมีอยู่ 2 ส่วนก็คือ ภาษาของ Value และ ภาษาของ Type, **ภาษาของ Value** ก็คือ Code ของ JavaScript ที่จะถูกนำไปทำงานจริงๆ บน Production เพื่อตอบโจทย์ User, ส่วนภาษา 
+ก่อนอื่น เวลาที่เราเขียนภาษา JavaScript เรามักจะสนใจเพียงแค่การทำงานให้ถูกต้อง แต่พอเป็นเรื่อง Type ก็อาจจะไม่ได้สนใจมากนัก แต่พอเรามาเขียน TypeScript จะมีอยู่ 2 ส่วนก็คือ ภาษาของ Value และ ภาษาของ Type, **ภาษาของ Value** ก็คือ Code ของ JavaScript ที่จะถูกนำไปทำงานจริงๆ บน Production เพื่อตอบโจทย์ User, ส่วน**ภาษาของ Type** กำหนดประสบการณ์ของผู้เขียน ให้ลดการผิดพลาดมากขึ้น
 
 ในบทความชุด [Type Level Programming in Typescript](https://type-level-typescript.com/) มีหัวข้อดังนี้
 
 
-1. Types & Values
-2. Types are just data
-3. Objects & Records
-4. Arrays & Tuples
-5. Conditional Types
+0. [Introduction](https://type-level-typescript.com/) 
+1. [Types & Values](https://type-level-typescript.com/01-types-and-values)
+2. [Types are just data](https://type-level-typescript.com/02-types-are-just-data)
+3. [Objects & Records](https://type-level-typescript.com/03-objects-and-records)
+4. [Arrays & Tuples](https://type-level-typescript.com/04-arrays-and-tuples)
+5. [Conditional Types](https://type-level-typescript.com/05-conditional-types)
 6. Template Literal Types (Not publish yet)
 7. Advanced Union Types (Not publish yet)
 8. Loops with Mapped Types (Not publish yet)

@@ -12,8 +12,8 @@ enum PostState {
 }
 
 const state1: PostState = PostState.Draft;
-const state2: PostState = "IDEA";    // Error: Type '"IDEA"' is not assignable to type 'PostState'
-const state3: PostState = "DRAFT";   // Error: Type '"DRAFT"' is not assignable to type 'PostState'.
+const state2: PostState = "IDEA";    // ❌ Error: Type '"IDEA"' is not assignable to type 'PostState'
+const state3: PostState = "DRAFT";   // ❌ Error: Type '"DRAFT"' is not assignable to type 'PostState'.
 ```
 
 บางทีเราสามารถใช้ `as` เพื่อ casting type ได้ แต่มันก็ไม่เกิดประโยชน์เท่าไหร่ เพราะความสามารถในการเช็ค Type หายไป
@@ -43,7 +43,7 @@ const PostState = {
 เราสามารถทำ Type Alias เพื่อมา check type ของ `PostState` ได้
 
 ```typescript
-type PostStateType = PostState; // Error เราไม่สามารถเอา js variable มาเป็น type ได้
+type PostStateType = PostState; // ❌ Error เราไม่สามารถเอา js variable มาเป็น type ได้
 type PostStateType = typeof PostState; //เราสามารถใช้ `typeof` เพื่อเอา type ของ js variable มาได้แทน
 ```
 
@@ -74,7 +74,7 @@ type PostStateType = typeof PostState[keyof typeof PostState];
 // type PostStateType = "DRAFT" | "SCHEDULED" | "PUBLISHED"
 
 const state1: PostStateType = PostState.Draft;  // อันนี้ เราสามารใช้งานได้เหมือน enum เลย
-const state2: PostStateType = "IDEA";           // อันนี้ Error: Type '"IDEA"' is not assignable to type 'PostStateType'
+const state2: PostStateType = "IDEA";           // อันนี้ ❌ Error: Type '"IDEA"' is not assignable to type 'PostStateType'
 const state3: PostStateType = "DRAFT";          // เย้ๆ เราสามารถ passing string ที่ match กับ value ใน PostState ได้แล้ว
 ```
 

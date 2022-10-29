@@ -1,4 +1,3 @@
 
 # การตั้งค่า tsconfig.json
 
-https://www.youtube.com/watch?v=t0qQSujSslQ
