@@ -6,15 +6,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Github Actions TH',
-  tagline: 'คู่มือทำ CI/CD ด้วย GitHub Actions สำหรับคนไทย',
-  url: 'https://github-actions-th.thadaw.com',
+  title: 'TypeScript TH',
+  tagline: 'คู่มือ TypeScript สำหรับคนไทย',
+  url: 'https://typescript-th.thadaw.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'mildronize', // Usually your GitHub org/user name.
-  projectName: 'github-actions-thai', // Usually your repo name.
+  projectName: 'typescript-th', // Usually your repo name.
 
 
   // https://www.flaticon.com/packs/kitty-avatars-3
@@ -62,9 +62,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'GitHub Actions TH',
+        title: 'TypeScript TH',
         logo: {
-          alt: 'GitHub Actions Logo',
+          alt: 'TypeScript Logo',
           src: 'img/logo.png',
         },
         items: [
@@ -81,7 +81,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/mildronize/github-actions-thai',
+            href: 'https://github.com/mildronize/tyescript-th',
             label: 'GitHub',
             position: 'right',
           },
@@ -133,12 +133,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/mildronize/github-actions-thai',
+                href: 'https://github.com/mildronize/typescript-th',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} GitHub Actions TH, Inc. Built with Docusaurus, <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>`,
+        copyright: `Copyright © ${new Date().getFullYear()} TypeScript TH, Inc. Built with Docusaurus, <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>`,
       },
       prism: {
         theme: lightCodeTheme,

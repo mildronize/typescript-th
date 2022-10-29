@@ -4,9 +4,6 @@ sidebar_position: 1
 
 # แนะนำหนังสือ
 
-
-<img src="/img/kitty/kitty-love.png" width="30"/> สวัสดีครับ นี่ไม่ใช่ GitHub Actions 101 ไม่ใช่สำหรับผู้เริ่มต้น แต่จะมีข้อมูล และ Trick ดีๆ เกี่ยวกับใช้งาน GitHub Actions มาแบ่งปันแน่นอน
-
 ---
 
 :::caution

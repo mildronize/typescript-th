@@ -2,9 +2,9 @@
 slug: welcome
 title: Welcome
 authors: [thada]
-tags: [GitHub Actions]
+tags: [TypeSCript]
 ---
 
-ยินดีต้อนรับสู่ GitHub Actions Thai
+ยินดีต้อนรับสู่ TypeScript Thai
 
 รอติดตาม Content ดีๆ ได้เลย
