@@ -119,3 +119,7 @@ Express Router
 ## YouTube Channels:
 - [Andrew Burgess](https://www.youtube.com/c/andrew8088) -- TypeScript ฟังง่าย ยกตัวอย่างประกอบชัดเจนดี
 - [basarat](https://www.youtube.com/@basarat) -- TypeScript, Next.js, Cypress, Playwright, React Native, React
+
+
+## Blog
+- https://bobbyhadz.com/
