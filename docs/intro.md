@@ -8,6 +8,8 @@ sidebar_position: 1
 
 มาดูกันว่าในปี 2022 ในภาษา JavaScript/TypeScript เค้ามักจะใช้อะไรกันบ้าง
 
+นึกไม่ออก เอามากองตรงนี้ไว้ก่อน
+
 :::
 
 
@@ -109,6 +111,11 @@ Express Router
 - [The Art of Type Programming](https://mistlog.medium.com/the-art-of-type-programming-cfd933bdfff7) (92 claps)
 - [Type Query: jQuery Style Type Manipulation](https://mistlog.medium.com/type-query-jquery-style-type-manipulation-497ce26d93f) (17 claps)****
 
-## **Books**
+## Books
 
-- [Effective TypeScript](https://effectivetypescript.com/)
+- [Effective TypeScript](https://effectivetypescript.com/) - [E-book at oreilly](https://learning.oreilly.com/library/view/effective-typescript/9781492053736/) / Book
+- [TypeScript Deep Dive](https://basarat.gitbook.io/typescript/)
+
+## YouTube Channels:
+- [Andrew Burgess](https://www.youtube.com/c/andrew8088) -- TypeScript ฟังง่าย ยกตัวอย่างประกอบชัดเจนดี
+- [basarat](https://www.youtube.com/@basarat) -- TypeScript, Next.js, Cypress, Playwright, React Native, React
