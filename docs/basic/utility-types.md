@@ -78,7 +78,7 @@ const todo: ReadonlyTodo = {
 todo.title = "Hello"; // ❌ Error: Cannot assign to 'title' because it is a read-only property
 ```
 
-เราสามารถใช้ `as const` เพื่อทำให้เป็น readonly ได้เหมือนกัน (Only Type Assertion) [อ่านเพิ่มที่](/docs/basic/everyday-types#type-assertions)
+เราสามารถใช้ `as const` เพื่อทำให้เป็น readonly ได้เหมือนกัน (Only Type Assertion) [อ่านเพิ่มที่](/docs/everyday-types/type-assertions)
 
 ถ้าเราอยากให้ Error ที่ Run time แนะนำให้ใช้ `Object.freeze(obj)` เช่น
 
