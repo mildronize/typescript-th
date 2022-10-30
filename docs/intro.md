@@ -123,3 +123,64 @@ Express Router
 
 ## Blog
 - https://bobbyhadz.com/
+
+
+
+## ไม่รู้จะวางไว้ไหน
+
+เริ่มจาการที่นิยาม Type `FilterRecord<T, U>`
+
+```typescript
+type Pick<T, K extends keyof T> = {
+    [P in K]: T[P];
+};
+
+```
+
+```typescript
+export type FilterRecord<T, U extends keyof T> = { [K in U]: T[K] };
+
+// Demo FilterRecord
+
+interface IPost {
+  id: string;
+  title: string;
+}
+type PostID = FilterRecord<IPost, 'id'>;
+//  ^-- We will get type `PostID`
+// type PostID = {
+//     id: string;
+// }
+
+// `PostID` property will be required.
+const postID: PostID = {
+  id: '123'
+}
+```
+
+จากนั้น ถ้าเราทำให้ Property ของ FilterRecord เป็น optional กัน โดยเอา `Partial<Type>` ไปครอบ `FilterRecord<T, U>` อีกที
+
+```typescript
+// Use Partial for using some element
+export type PartialFilterRecord<T, U extends keyof T> = Partial<
+  FilterRecord<T, U>
+>;
+
+// Demo PartialFilterRecord<T, U>
+
+interface IPost {
+  id: string;
+  title: string;
+}
+type PostID = PartialFilterRecord<IPost, 'id'>;
+//  ^-- We will get type `PostID`
+// type PostID = {
+//     id?: string | undefined;
+// }
+
+// `PostID` allow us to create empty object
+const postID: PostID = {};
+```
+
+จากนั้นนิยาม function `filterRecord` สำหรับเลือกบาง Property จาก Record
+สาเหตุที่เลือกใช้ Partial ของ FilterRecord จะทำให้สร้าง Object ว่างๆ ได้นั่นเอง แล้วค่อยเลือก Property ทีหลัง

@@ -139,3 +139,41 @@ countActivities.Walking = 5; // It work!
 countActivities.Cycling = 4; // ❌ Error: Property 'Cycling' does not exist on type 'Partial<Record<Activities, number>>'
 ```
 
+## Pick<T, Keys>
+
+เลือกบาง Property ออกมาจาก Object
+
+```typescript
+interface Todo {
+  title: string;
+  description: string;
+  completed: boolean;
+}
+ 
+type PickTodo = Pick<Todo, 'title' | 'completed'>;
+
+// type PickTodo = {
+//     title: string;
+//     completed: boolean;
+// }
+```
+
+## Omit<Type, Keys>
+
+ลบบาง Property จาก Object
+
+```typescript
+interface Todo {
+  title: string;
+  description: string;
+  completed: boolean;
+}
+ 
+type OmitTodo = Omit<Todo, 'description'>;
+ 
+// type OmitTodo = {
+//     title: string;
+//     completed: boolean;
+// }
+```
+
