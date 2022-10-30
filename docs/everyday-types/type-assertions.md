@@ -1,10 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
 ---
 
-# Types ที่ใช้งานเป็นประจำ
-
-## Type Assertions
+# Type Assertions
 
 const assertions in Typescript
 https://mainawycliffe.dev/blog/const-assertion-in-typescript/
