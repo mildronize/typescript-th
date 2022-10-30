@@ -12,6 +12,10 @@ This book is currently in **alpha** status. Visit us on GitHub to contribute imp
 
 :::
 
+## ควรเข้าใจ Basic JavaScript
+
+อ่านเพิ่มที่ https://javascript.info/
+
 ทำความเข้าใจกับ Data Type
 
 ## Data Type ใน JavaScript
