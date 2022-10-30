@@ -42,7 +42,6 @@ sidebar_position: 1
 ### Unknown
 
 [https://github.com/gvergnaud/ts-pattern](https://github.com/gvergnaud/ts-pattern) (4k ⭐️)
-<https://github.com/gcanti/fp-ts> -- Functional programming in TypeScript (8.6k ⭐️)
 
 ## Zod
 
