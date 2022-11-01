@@ -146,4 +146,3 @@ type OmitTodo = Omit<Todo, 'description'>;
 //     completed: boolean;
 // }
 ```
-
