@@ -29,8 +29,9 @@ if (isNumberArray(unknownValue)) {
 ```
 
 Ref: 
-https://mariusschulz.com/blog/the-unknown-type-in-typescript
-https://mainawycliffe.dev/blog/type-guards-and-narrowing-in-typescript/
+- https://mariusschulz.com/blog/the-unknown-type-in-typescript
+- https://mainawycliffe.dev/blog/type-guards-and-narrowing-in-typescript/
+- https://bobbyhadz.com/blog/typescript-type-unknown-is-not-assignable-to-type
 
 ทีนี้มาลอง Narrow เพื่อเช็ค Record Type กัน โดยใช้ lib data validation ที่ชื่อ [zod](https://github.com/colinhacks/zod)
 
