@@ -43,6 +43,18 @@ TypeScript provides us with 5 main categories of types: **primitive** types, **l
 อ่านเพิ่ม: 
 - https://type-level-typescript.com/02-types-are-just-data
 
+## TS Config
+
+เพื่อความสนุกในการใช้ TypeScript เอ้ย เพื่อความถูกต้อง ลองเปิดโหมด `Strict` ดูก่อนอ่านบทความในหนังสือนี้นะ
+
+```json
+{
+  "compilerOptions": {
+    "strict": true
+  }
+}
+```
+
 ----
 
 Creative Commons License This book is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).

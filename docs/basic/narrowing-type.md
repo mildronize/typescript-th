@@ -11,7 +11,7 @@
 /**
  * A custom type guard function that determines whether
  * `value` is an array that only contains numbers.
- */
+ */``
 function isNumberArray(value: unknown): value is number[] {
   return (
     Array.isArray(value) && value.every(element => typeof element === "number")
@@ -40,11 +40,10 @@ import { z } from 'zod';
 
 function isRecord(object: unknown): object is Record<string, unknown> {
   const recordSchema = z.record(z.unknown());
-  const result = recordSchema.safeParse(object);
-  return result.success === true;
+  return recordSchema.safeParse(object).success;
 }
 
-function findLength(object: unknown): any {
+function findLength(object: unknown): number {
   if (Array.isArray(object)) {
     return console.log(object.length);
   } else if (isRecord(object)) {
