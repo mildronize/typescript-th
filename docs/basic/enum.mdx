@@ -84,9 +84,9 @@ const state3: PostStateType = "DRAFT";          // เย้ๆ เราสา�
 
 ```typescript
 // Type Utility
-type ToEnum<T> = T[keyof T];
+type Enum<T> = T[keyof T];
 
-type PostStateType = ToEnum<typeof PostState>;
+type PostStateType = Enum<typeof PostState>;
 ```
 
 
