@@ -34,16 +34,18 @@ type MyPick<T, K extends keyof T> = {
 };
 ```
 
-It can explain in pseudo-code (TypeScript Like) 
+สร้าง Type ที่ชื่อ `MyPick` โดยที่มี parameter เป็น `T` และ `K`  ซึ่ง `K` เป็น type `keyof T` เท่านั้น
 
-```ts
-// This is not TypeScript Syntax
-function MyPick(T: unknown, K: keyof T){
-    return map(K, P => ({ 
-       P: T[P]
-    }));
-}
-```
+สมมติ `T` เป็น `Todo` ดังนั้น `keyof T` จะเป็น type `'title' | 'description' | 'completed'`
+
+ในส่วนของการ return type (`{ [P in K]: T[P] }`)หมายถึงให้สร้าง Mapped Types โดยที่มี
+  - Key (`[P in K]`): หมายถึงการ Foreach `P` in `K`
+    - ในโจทย์ `K` คือ `"title" | "completed"`
+    - ดังนั้น `P` จะมีได้ 2 ค่า คือ `title` และ `completed`
+  - Value (`T[P]` ): เป็น Lookup Types `T[P]` โดยเอา `P` ที่มาจากการ Foreach ใน Key ไป โดยเอา Type จาก `T[P]`
+    - ถ้า `P` เป็น **"title"** ดังนั้น `T[P]` คือ **string**
+    - ถ้า `P` เป็น **"completed"** ดังนั้น `T[P]` คือ **boolean**
+
 
 อ่านเพิ่ม
 - [Keyof Type Operator](/docs/basic/type-manipulation#keyof)

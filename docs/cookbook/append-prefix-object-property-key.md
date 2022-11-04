@@ -4,7 +4,7 @@ Ref: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-1.h
 
 Require: Version 4.1
 
-```typescript
+```ts
 
 type AppendPrefix<T, U extends string> = {
   [K in keyof T as `${U}${K & string}`]: T[K]
@@ -35,4 +35,6 @@ const oldPerson = appendPrefix(person, 'old_');
 oldPerson.old_age;
 oldPerson.old_location;
 oldPerson.old_name;
+
+oldPerson.name;   //  ❌ Property 'name' does not exist on type 'Partial<AppendPrefix<Person, "old_">>'
 ```
