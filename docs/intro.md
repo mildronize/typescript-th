@@ -86,6 +86,8 @@ Express Router
 - ts-node
 - ts-node-dev
 - nodemon
+- [tsup](https://github.com/egoist/tsup) 4k ⭐ - Bundle your TypeScript library with no config, powered by esbuild.
+- [tsdx](https://tsdx.io/) 10.4k ⭐ - TSDX Zero-config CLI for TypeScript package development, powered by Rollup
 
 # Code Editor / IDE
 
