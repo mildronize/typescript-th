@@ -14,9 +14,7 @@ This book is currently in **alpha** status. Visit us on GitHub to contribute imp
 
 ## ควรเข้าใจ Basic JavaScript
 
-อ่านเพิ่มที่ https://javascript.info/
-
-ทำความเข้าใจกับ Data Type
+อ่านเพิ่มที่ https://javascript.info/ และ ทำความเข้าใจกับ Data Type,
 
 ## Data Type ใน JavaScript
 
@@ -35,6 +33,10 @@ non-primitive data type:
 อ่านเพิ่ม: 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
 - https://javascript.info/types
+
+## Intro to TypeScript
+
+TypeScript ไม่ใช่ JavaScript อยู่คนละโลกกันกับ JavaScript เลย แต่สิ่งที่ TypeScript พยายามทำคือพยายามคำนวณ Type ให้ได้เยอะที่สุดจาก JavaScript, แต่เราก็หลอก Type ให้กับ TypeScript ได้เช่นกัน
 
 ## Data Type ใน TypeScript
 

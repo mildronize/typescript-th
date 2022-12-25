@@ -86,18 +86,4 @@ type MyReadonly<T> = {
 };
 ```
 
-It can explain in pseudo-code (TypeScript Like) 
 
-```ts
-// This is not TypeScript Syntax
-function MyReadonly(T: unknown){
-    return map(T, K => ({
-        readonly K: T[K]
-    }));
-}
-```
-
-
-## Footnoote
-
-**\*** ไม่แน่ใจว่า ถ้าเราไม่กำหนด Type ให้ Generic มันจะเป็น `unknown` หรือ `any`
