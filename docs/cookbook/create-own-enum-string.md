@@ -29,4 +29,7 @@ console.log(GenState);
 const myState1: Enum<typeof GenState> = GenState.completed;
 const myState2: Enum<typeof GenState> = 'completed';
 const myState3: Enum<typeof GenState> = 'hold';            // ❌ Error: Type '"hold"' is not assignable to type 'EnumGenState'.
+
+// or 
+const myState4: keyof typeof GenState = 'completed';
 ```
