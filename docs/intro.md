@@ -186,3 +186,22 @@ const postID: PostID = {};
 
 จากนั้นนิยาม function `filterRecord` สำหรับเลือกบาง Property จาก Record
 สาเหตุที่เลือกใช้ Partial ของ FilterRecord จะทำให้สร้าง Object ว่างๆ ได้นั่นเอง แล้วค่อยเลือก Property ทีหลัง
+
+
+## Type Workaround
+
+```ts
+// This case Tail always be array
+type CheckTailStatus<T extends any[]> = T extends [infer H, ...infer T]
+  ? T extends any[]
+    ? 'Tail is array'
+    : 'Tail is not array'
+  : 'empty array';
+
+type check1 = CheckTailStatus<[]>;
+type check2 = CheckTailStatus<['test']>;
+type check3 = CheckTailStatus<['test', 'aaa']>;
+
+// Basic Recursive
+type Recursive<T> = T extends [infer H, ...infer T] ? [H, ...Recursive<T>] : [];
+```
