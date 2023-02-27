@@ -121,7 +121,7 @@ Using Storage Account on Azure
 ## Thoubleshooting 
 
 ### Error: "Value cannot be null. (Parameter 'provider')" when run `func start`
-```diff
+```json
 {
   "version": "2.0",
   "logging": {
@@ -132,13 +132,21 @@ Using Storage Account on Azure
       }
     }
   },
--  "extensionBundle": {
--    "id": "Microsoft.Azure.Functions.ExtensionBundle",
--    "version": "[2.*, 3.0.0)"
+   "extensionBundle": {
+     "id": "Microsoft.Azure.Functions.ExtensionBundle",
+     "version": "[2.*, 3.0.0)"
   }
 }
 ```
-Ref: [Azure/azure-functions-core-tools Issues#2232](https://github.com/Azure/azure-functions-core-tools/issues/2232#issuecomment-781818217)
+
+Don't forget to run
+
+```bash
+func extensions install
+```
+
+Ref: [Install all extensions - Offcial Azure Docs](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=v4%2Cmacos%2Ccsharp%2Cportal%2Cbash#install-all-extensions)
+
 
 ### Local Dev
 
