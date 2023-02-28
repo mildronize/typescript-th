@@ -147,6 +147,13 @@ func extensions install
 
 Ref: [Install all extensions - Offcial Azure Docs](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=v4%2Cmacos%2Ccsharp%2Cportal%2Cbash#install-all-extensions)
 
+### Worker was unable to load entry point "xxxxx": Found zero files matching the supplied pattern
+
+please make sure `main` in `package.json` is existing file. 
+
+I've found the error from [Azure/azure-functions-nodejs-worker](https://github.com/Azure/azure-functions-nodejs-worker/blob/45865da3f5f9b09de9a6cbeb6dbf1d1bb4ee0284/src/startApp.ts#L49)
+
+But I don't know how the `main` entrypoint file working.
 
 ### Local Dev
 
