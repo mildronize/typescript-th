@@ -4,9 +4,20 @@ sidebar_position: 1
 
 # การจัดการกับ Object
 
+บางครั้งเราต้องการเพิ่มคุณสมบัติใหม่ให้กับวัตถุ แต่การกระทำนี้อาจส่งผลให้เกิดข้อผิดพลาด ดูตัวอย่างด้านล่าง:
 
+```ts
+const nameRecord = {};
+nameRecord.john = 1; // ❌ Error: Property 'john' does not exist on type '{}'.
+```
+
+เราไม่สามารถเพิ่มคุณสมบัติ 'john' ให้กับ `nameRecord` ได้เนื่องจากวัตถุไม่มีคุณสมบัตินั้น
+
+ในการแก้ปัญหานี้ เราต้องใช้ [Mapped Types](/docs/basic/mapped-types) ในกรณีนี้คือ `Record`
 
 ## Record<Keys, Type>
+
+`Record` ช่วยให้เราสามารถสร้างวัตถุที่สามารถเพิ่มคุณสมบัติใหม่ๆ ได้ ดูตัวอย่างด้านล่าง:
 
 ```typescript
 const nameRecord: Record<string, number> = {
@@ -14,10 +25,12 @@ const nameRecord: Record<string, number> = {
   micky: 2,
 };
  
-nameRecord['Lilly'] = 5; // We can add new property in object becuase 'Lilly' is string
+nameRecord['Lilly'] = 5; // เราสามารถเพิ่มคุณสมบัติใหม่ให้กับวัตถุได้ เพราะ 'Lilly' เป็นชนิดข้อมูล string
 
-nameRecord[true] = 5; // ❌ Error: Type 'true' cannot be used as an index type
+nameRecord[true] = 5; // ❌ ข้อผิดพลาด: ไม่สามารถใช้ชนิดข้อมูล 'true' เป็นคีย์
 ```
+
+ในตัวอย่างนี้เราสร้างตัวแปร `nameRecord` ที่มีชนิดข้อมูล `Record<string, number>` ซึ่งอนุญาตให้เพิ่มคุณสมบัติที่มีชนิดข้อมูลเป็น `string` และค่าของคุณสมบัติเป็นชนิดข้อมูล `number` นอกจากนี้เรายังไม่สามารถใช้ค่าที่ไม่ใช่ `string` เป็นชนิดข้อมูลของคีย์ได้
 
 ### Record with Type Union (All Properties are required)
 
