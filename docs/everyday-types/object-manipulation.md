@@ -54,7 +54,20 @@ const countActivities: Record<Activities, number> = {
 ต้องมีคีย์ของคุณสมบัติตรงกับที่กำหนดในชนิด `Activities`
 ดังนั้นเราจึงต้องกำหนดค่าให้กับคุณสมบัติ 'Running', 'Walking', และ 'Swimming' ทั้งสามคุณสมบัติเสมอ
 
-### Record with Type Union (All Properties are optional)
+### Record with Type Union  (ไม่จำเป็นต้องมีคีย์ครบทั้งหมด)
+
+ในกรณีที่ต้องการให้คุณสมบัติทั้งหมดเป็นตัวเลือก คุณสามารถใช้ `Partial` ร่วมกับ `Record` ดังตัวอย่าง:
+
+```ts
+type Activities = 'Running' | 'Walking' | 'Swimming';
+const countActivities2: Partial<Record<Activities, number>> = {
+  Running: 0,
+}
+
+// คีย์ของ Object `countActivities2` ต้องตรงกับชนิด `Activities` และไม่จำเป็นต้องใส่ครบ
+```
+
+หรือคุณสามารถกำหนด **`PartialRecord<Type>`** เพื่อใช้งานเอง:
 
 ```typescript
 // กำหนด PartialRecord<Type> เพื่อใช้งานเอง
@@ -65,6 +78,8 @@ const countActivities: PartialRecord<Activities, number> = {
   Running: 0,
 }
  
-countActivities.Walking = 5; // It work!
-countActivities.Cycling = 4; // ❌ Error: Property 'Cycling' does not exist on type 'Partial<Record<Activities, number>>'
+countActivities.Walking = 5; // ใช้งานได้!
+countActivities.Cycling = 4; // ❌ ข้อผิดพลาด: คุณสมบัติ 'Cycling' ไม่มีอยู่ในชนิด 'Partial<Record<Activities, number>>'
 ```
+
+ในตัวอย่างนี้ เรากำหนดชนิด **`Activities`** ที่ประกอบด้วยค่า 'Running', 'Walking', และ 'Swimming' และสร้าง Object **`countActivities`** ที่มีชนิดข้อมูล **`PartialRecord<Activities, number>`** ซึ่งอนุญาตให้คุณสมบัติทั้งหมดใน Object เป็นตัวเลือก ไม่จำเป็นต้องใส่ครบทุกคีย์ แต่คีย์ที่ใช้ยังคงต้องอยู่ในชนิด **`Activities`**
